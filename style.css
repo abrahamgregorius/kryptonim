@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem .3rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-left {
+    font-size: 12px;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-solution {
+    display: flex;
+    font-family: monospace;
+}
+
+.nav-toggle {
+    font-size: 32px;
+}
+
+.nav-center {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    justify-content: center;
+    z-index: 99;
+    padding: 1rem 0 ;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.234);
+    background-color: white;
+
+}
+
+.nav-center ul{
+    list-style: none;
+    display: flex;
+    gap: .8rem; 
+    flex-direction: column;
+}
+
+.nav-center ul li {
+    text-align: center;
+}
+
+.nav-center ul li a {
+    color: black;
+}
+
+.active {
+    display: block !important;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.hero .container {
+    gap: 3rem;
+}
+
+.hero {
+    padding: 4rem 0;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    color: grey;
+    margin-bottom: 0;
+    font-family: monospace;
+}
+
+.hero h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: 80%;
+    
+}
+
+.hero h4 {
+    font-family: 'Lato', sans-serif;    font-weight: 400;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.cta-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cta-header button {
+    border: 0;
+}
+
+.cta-start {
+    padding: 1rem 1.2rem;
+    border-radius: 50rem;
+    color: white;
+    background: linear-gradient(to right, blue, rgb(28, 152, 252));
+    box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.482)
+}
+
+.cta-discover {
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-right {
+}
+
+.hero-right img {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.features {
+    padding: 1rem 0 4rem;
+}
+
+.feature h3, p{
+    font-family: 'Lato', sans-serif;}
+
+.feature-logo {
+    margin-bottom: .8rem;
+}
+
+.feature-title {
+    font-weight: 700;
+    margin: 1rem 0 .8rem;
+}
+
+.feature-desc {
+    /* width: 100%; */
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(79, 79, 79)
+}
+
+.feature-logo svg {
+    color: rgba(0, 0, 0, 0.69)
+}
+
+
+.feature {
+    /* padding: 1rem;
+    border-radius: .4rem;
+    border: 1px solid black; */
+    margin-bottom: 1.5rem;
+}
+
+.gap-1 {gap: 0.25rem}
+.gap-2 {gap: 0.5rem}
+.gap-3 {gap: 0.75rem}
+.gap-4 {gap: 1rem}
+
+.hero-mid {
+    padding: 15rem 0;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-mid-back {
+    color: rgba(255, 255, 255, 0.05);
+    font-size: 250px;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-family: monospace;
+}
+
+.hero-mid-wrap {
+    font-family: 'Lato', sans-serif;    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.hero-mid-wrap h2 {
+    width: 100%;
+    font-family: 'Lato', sans-serif;    
+    max-width: 530px;
+    font-weight: 600;
+    font-size: 3.8rem;
+}
+
+.hero-mid-wrap p {
+    width: 85%;
+}
+
+.hero-mid-grad {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(28, 152, 252), rgb(46, 84, 255));
+}
+
+h3 .hero-mid-grad {
+    font-family: "Lato", sans-serif;
+}
+
+.solution {
+    padding: 9rem 0 4rem;
+}
+
+.solution-wrap {
+    gap: 3rem;
+
+}
+
+.solu-left {
+    width: 90%;
+}
+
+.solu-left h2 {
+    font-size: 42px;
+    margin-bottom: 1rem;
+}
+
+.solu-left p {
+    font-family: monospace;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+}
+
+.solu-left h2, .solu-left .solu-left-desc {
+    font-family: 'Lato', sans-serif;
+}
+
+.solu-right ol{
+    padding: 0 0 0 1rem;
+}
+
+.solu-right ol li {
+    margin-bottom: 5rem;
+}
+
+.solu-right ol li h3 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.faq {
+    margin: 4rem 0 8rem;
+}
+
+.faq-head {
+    width: 95%;
+    margin-bottom: 3rem;
+}
+
+
+.faq-head .faq-title {
+    font-family: monospace;
+}
+
+.faq-title {
+    margin-bottom: 1rem;
+}
+
+.faq-head h2 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+
+
+.faq-head h2, .faq-head span{
+    font-family: 'Lato', sans-serif
+}
+
+.cards {
+    gap: 2rem;
+}
+
+.card {
+    padding: 4rem 3rem;
+    overflow: hidden;
+}
+
+.card-indi {
+    background-color: rgb(235, 235, 235);
+    border-radius: 1.6rem;
+}
+
+.card-part {
+    color: white;
+    background: linear-gradient(to right, black, blue, lightblue);
+    border-radius: 1.6rem;
+}
+
+.card h2 {
+    font-family: "Lato";
+    margin-bottom: 1.6rem;
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.card p {
+    margin-bottom: 1.6rem;
+
+}
+
+.card hr {
+    margin-bottom: 1.6rem;
+    background-color: rgba(211, 211, 211, 0.303);
+    opacity: 0.5;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 2rem 1rem;
+    width: 100%;
+    border-top: 1px solid black;
+    color: black;
+}
+
+.footer-left, .footer-right {
+    margin-bottom: 1.7rem;
+}
+
+
+.footer-left h3, .footer-right h3 {
+    font-size: 32px;
+    font-family: "Lato";
+}
+
+.footer-left ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-left ul li {
+    margin-bottom: .5rem;
+
+}
+
+.footer-left ul li a{
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .nav-center {
+        display: flex;
+        position: static;
+        box-shadow: none;
+    }
+
+    .nav-center ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-center ul li a{
+        text-decoration: none;
+    }
+    
+    .nav-right {
+        display: flex !important;
+        flex-shrink: 0;
+    }
+    
+    .nav-right ul {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .nav-right ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .hero.container {
+        flex-direction: row;
+    }
+
+    .faq-head h2 {
+        width: 35%;
+    }
+
+    .faq-desc {
+        width: 45%;
+        margin-bottom: 6rem;
+    }
+
+
+    .grid-cols-lg-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-cols-lg-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-cols-lg-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-cols-lg-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gap-lg-1 {gap: 0.25rem}
+    .gap-lg-2 {gap: 0.5rem}
+    .gap-lg-3 {gap: 0.75rem}
+    .gap-lg-4 {gap: 1rem}
+
+    .hero-mid-wrap p {
+        width: 50%;
+    }
+
+    .solu-left {
+        width: 70%;
+    }
+
+    .card h2 {
+        font-size: 36px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+
+
+    .footer-right-text {
+        margin-bottom: 2rem;
+    }
+
+
+}
